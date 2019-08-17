@@ -1,1 +1,118 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+}
+
+header {
+  margin: 1em 3em;
+}
+
+header nav {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header nav .navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .navigation ul li {
+  padding-left: 40px;
+}
+
+header nav .navigation ul li a {
+  text-decoration: none;
+}
+
+header nav .navigation ul li a:visited {
+  color: black;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3em 1fr 1fr 1fr 3em;
+      grid-template-columns: 3em 1fr 1fr 1fr 3em;
+  height: 92vh;
+}
+
+main .big-text {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+main .big-text h3 {
+  font-size: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+main .big-text h1 {
+  font-size: 94px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+main .big-text .action {
+  font-size: 44px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .big-text .action a {
+  text-decoration: none;
+  border: 2px black solid;
+  border-radius: 20px;
+  padding: 0 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .big-text .action .main-action:visited {
+  color: white;
+}
+
+main .big-text .action .main-action {
+  color: white;
+  background-color: black;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+main .big-text .action .main-action:hover {
+  color: black;
+  background-color: white;
+}
+
+main .big-text .action a:visited {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
