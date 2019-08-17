@@ -5,13 +5,32 @@
   font-family: "Catamaran", sans-serif;
 }
 
+.landing {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+}
+
 header {
-  margin: 1em 3em;
+  padding: 1em 3em;
   nav {
     font-size: 25px;
     display: flex;
     justify-content: space-between;
     align-content: center;
+    color: white;
+
+    a {
+      text-decoration: none;
+      transition: 0.25s ease-in-out;
+    }
+
+    a:visited {
+      color: white;
+    }
+
+    a:hover {
+      opacity: 0.5;
+    }
 
     .navigation ul {
       list-style-type: none;
@@ -22,10 +41,16 @@ header {
 
         a {
           text-decoration: none;
+          color: white;
+          transition: 0.25s ease-in-out;
         }
 
         a:visited {
-          color: black;
+          color: white;
+        }
+
+        a:hover {
+          opacity: 0.5;
         }
       }
     }
@@ -35,7 +60,9 @@ header {
 main {
   display: grid;
   grid-template-columns: 3em 1fr 1fr 1fr 3em;
-  height: 92vh;
+  height: 93vh;
+  color: white;
+  overflow: hidden;
 
   .big-text {
     grid-column: 3/4;
@@ -65,29 +92,37 @@ main {
 
       a {
         text-decoration: none;
-        border: 2px black solid;
+        border: 2px white solid;
         border-radius: 20px;
         padding: 0 20px;
         align-content: center;
+        color: white;
+        transition: 0.25s ease-in-out;
       }
 
       .main-action:visited {
-        color: white;
+        color: #655269;
       }
 
       .main-action {
-        color: white;
-        background-color: black;
+        color: #655269;
+        background-color: white;
         transition: 0.25s ease-in-out;
       }
 
       .main-action:hover {
-        color: black;
-        background-color: white;
+        color: white;
+        background-color: rgba(101, 82, 105, 0.5);
+        border: rgba(101, 82, 105, 0) 2px solid;
       }
 
       a:visited {
-        color: black;
+        color: white;
+      }
+
+      a:hover {
+        color: #655269;
+        border: #655269 2px solid;
       }
     }
   }

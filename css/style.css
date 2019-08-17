@@ -6,8 +6,13 @@
   font-family: "Catamaran", sans-serif;
 }
 
+.landing {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+}
+
 header {
-  margin: 1em 3em;
+  padding: 1em 3em;
 }
 
 header nav {
@@ -20,6 +25,21 @@ header nav {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+  color: white;
+}
+
+header nav a {
+  text-decoration: none;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header nav a:visited {
+  color: white;
+}
+
+header nav a:hover {
+  opacity: 0.5;
 }
 
 header nav .navigation ul {
@@ -35,10 +55,17 @@ header nav .navigation ul li {
 
 header nav .navigation ul li a {
   text-decoration: none;
+  color: white;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 header nav .navigation ul li a:visited {
-  color: black;
+  color: white;
+}
+
+header nav .navigation ul li a:hover {
+  opacity: 0.5;
 }
 
 main {
@@ -46,7 +73,9 @@ main {
   display: grid;
   -ms-grid-columns: 3em 1fr 1fr 1fr 3em;
       grid-template-columns: 3em 1fr 1fr 1fr 3em;
-  height: 92vh;
+  height: 93vh;
+  color: white;
+  overflow: hidden;
 }
 
 main .big-text {
@@ -89,30 +118,39 @@ main .big-text .action {
 
 main .big-text .action a {
   text-decoration: none;
-  border: 2px black solid;
+  border: 2px white solid;
   border-radius: 20px;
   padding: 0 20px;
   -ms-flex-line-pack: center;
       align-content: center;
+  color: white;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 main .big-text .action .main-action:visited {
-  color: white;
+  color: #655269;
 }
 
 main .big-text .action .main-action {
-  color: white;
-  background-color: black;
+  color: #655269;
+  background-color: white;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
 main .big-text .action .main-action:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: rgba(101, 82, 105, 0.5);
+  border: rgba(101, 82, 105, 0) 2px solid;
 }
 
 main .big-text .action a:visited {
-  color: black;
+  color: white;
+}
+
+main .big-text .action a:hover {
+  color: #655269;
+  border: #655269 2px solid;
 }
 /*# sourceMappingURL=style.css.map */
